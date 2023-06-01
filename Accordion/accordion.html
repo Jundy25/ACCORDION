@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg {
+            /* The image used */
+            background-image: url("aether.gif");
+
+
+            /* Full height */
+            height: 100%; 
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        body{
+            justify-content: center;
+            
+        }
+        .collapsible {
+          background: none;
+          cursor: pointer;
+          border: none;
+          outline: none;
+        }
+        
+        .collapsible:hover {
+            opacity: .5;
+        }
+        
+        
+
+        .box{
+
+            display: flex;
+            width: 50%;
+            padding: 30px;
+            border-radius: 15px;
+            background-color: aquamarine;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .line{
+            display: flex;
+            flex-direction: row;
+            border-bottom: 2px #555;
+            justify-content: space-between;
+            border-bottom-style:solid;
+            margin-top: 15px;
+            
+        }
+        
+        .btn{
+            display: flex;
+        }
+
+        P{
+            
+        }
+       
+        
+        
+        </style>
+      </head>
+      <body class="bg">
+        <div class="box">
+            <div class="info">
+                <div class="line">
+                    <div class="sub1">
+                        INFORMATION MANAGEMENT
+                    </div>
+                    <div class="btn">
+                        <button type="button" class="collapsible" onclick="pislit()"><img src="arrow2.png" width= 18 height= 18></button>
+                    </div>
+                </div>
+                <div id="con" class="content" style="display:none;">
+                <p>Information management is an emerging field that is concerned with: The infrastructure used to collect, manage, preserve, store and deliver information.</p>
+                </div>
+            </div>
+            <div class="info">
+                <div class="line">
+                    <div class="sub2">
+                        NETWORKING
+                    </div>
+                    <div class="btn">
+                        <button type="button" class="collapsible" onclick="pislit2()"><img src="arrow2.png" width= 18 height= 18></button>
+                    </div>
+                </div>
+                <div id="con2" class="content" style="display:none;">
+                <p>Computer networking refers to interconnected computing devices that can exchange data and share resources with each other. These networked devices use a system of rules, called communications protocols, to transmit information over physical or wireless technologies.</p>
+                </div>
+            </div>
+            <div class="info">
+                <div class="line">
+                    <div class="sub3">
+                        WEB SYSTEMS AND TECHNOLOGIES
+                    </div>
+                    <div class="btn">
+                        <button type="button" class="collapsible" onclick="pislit3()"><img src="arrow2.png" width= 18 height= 18></button>
+                    </div>
+                </div>
+                <div id="con3" class="content" style="display:none;">
+                <p>Web information system, or web-based information system, is an information system that uses Internet web technologies to deliver information and services, to users or other information systems/applications.</p>
+                </div>
+            </div>
+            <div class="info">
+                <div class="line">
+                    <div class="sub4">
+                        SYSTEMS INTEGRATION AND ARCHITECTURE
+                    </div>
+                    <div class="btn">
+                        <button type="button" class="collapsible" onclick="pislit4()"><img src="arrow2.png" width= 18 height= 18></button>
+                    </div>
+                </div>
+                <div id="con4" class="content" style="display:none;">
+                <p>The Systems Integration Architecture provides a bridge between the heterogeneous operational applications and platforms. This architecture ties together the mix of platforms, operating systems, transports, and applications.</p>
+                </div>
+            </div>
+        </div>
+			
+<script>
+    
+    function pislit(){
+        let drop = document.getElementById('con');
+        if (drop.style.display === "none") {
+            drop.style.display = "block";
+        } else {
+            drop.style.display = "none";
+        } 
+    }
+
+    function pislit2(){
+        let drop = document.getElementById('con2');
+        if (drop.style.display === "none") {
+            drop.style.display = "block";
+        } else {
+            drop.style.display = "none";
+        } 
+    }
+
+    function pislit3(){
+        let drop = document.getElementById('con3');
+        if (drop.style.display === "none") {
+            drop.style.display = "block";
+        } else {
+            drop.style.display = "none";
+        } 
+    }
+
+    function pislit4(){
+        let drop = document.getElementById('con4');
+        if (drop.style.display === "none") {
+            drop.style.display = "block";
+        } else {
+            drop.style.display = "none";
+        } 
+    }
+</script>
+https://codepen.io/mbxtr/pen/OJPOYg?html-preprocessor=haml
+
+</body>
+</html>
