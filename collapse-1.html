@@ -1,0 +1,219 @@
+<html>
+<head>
+<title></title>
+
+<style>
+.bg {
+            /* The image used */
+            background-color:cornflowerblue;
+        }
+        body{
+            justify-content: center;
+            
+        }
+        .collapsible {
+          background: none;
+          cursor: pointer;
+          border: none;
+          outline: none;
+        }
+        
+        .collapsible:hover {
+            opacity: .5;
+        }
+
+
+        
+        
+
+        .box{
+            display: flex;
+            justify-content: center;
+            background-color: blanchedalmond;
+            flex-direction: column;
+            padding: 30px;
+            width: 550px;
+            margin: 60px 180px 60px 180px ;
+            border-radius: 15px;
+        }
+
+        .line{
+            background-color: blanchedalmond;
+            display: flex;
+            text-align: left;
+            cursor: pointer;
+            padding-top: 20px;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            border: none;
+            border-bottom: 2px solid rgb(0, 0, 0);
+            position: relative;
+            
+        }
+        .active, .line:hover{
+          background-color:cornflowerblue;
+          color: wheat;
+        }
+
+        .line:after{
+          content: '\002b';
+          color: #000000;
+          position: absolute;
+          right: 20px;
+        }
+        .active:after{
+          content: '\2212';
+        }
+
+        .text{
+          padding: 20px;
+          font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+          font-size: 15px;
+          text-align: left justify;
+        }
+        
+#grow1 {
+  -moz-transition: height .5s;
+  -ms-transition: height .5s;
+  -o-transition: height .5s;
+  -webkit-transition: height .5s;
+  transition: height .5s;
+  height: 0;
+  overflow: hidden;
+}
+
+
+#grow2 {
+  -moz-transition: height .5s;
+  -ms-transition: height .5s;
+  -o-transition: height .5s;
+  -webkit-transition: height .5s;
+  transition: height .5s;
+  height: 0;
+  overflow: hidden;
+}
+
+
+#grow3 {
+  -moz-transition: height .5s;
+  -ms-transition: height .5s;
+  -o-transition: height .5s;
+  -webkit-transition: height .5s;
+  transition: height .5s;
+  height: 0;
+  overflow: hidden;
+}
+
+
+#grow4 {
+  -moz-transition: height .5s;
+  -ms-transition: height .5s;
+  -o-transition: height .5s;
+  -webkit-transition: height .5s;
+  transition: height .5s;
+  height: 0;
+  overflow: hidden;
+}
+
+
+
+</style>
+<script>
+    function growDiv1() {
+  let growDiv = document.getElementById('grow1');
+  if (growDiv.clientHeight) {
+    growDiv.style.height = 0;
+  } else {
+    var wrapper = document.querySelector('.measuringWrapper1');
+    growDiv.style.height = wrapper.clientHeight + "px";
+  }
+}
+
+
+    function growDiv2() {
+  let growDiv = document.getElementById('grow2');
+  if (growDiv.clientHeight) {
+    growDiv.style.height = 0;
+  } else {
+    var wrapper = document.querySelector('.measuringWrapper2');
+    growDiv.style.height = wrapper.clientHeight + "px";
+  }
+}
+
+
+    function growDiv3() {
+  let growDiv = document.getElementById('grow3');
+  if (growDiv.clientHeight) {
+    growDiv.style.height = 0;
+  } else {
+    var wrapper = document.querySelector('.measuringWrapper3');
+    growDiv.style.height = wrapper.clientHeight + "px";
+  }
+}
+
+
+    function growDiv4() {
+  let growDiv = document.getElementById('grow4');
+  if (growDiv.clientHeight) {
+    growDiv.style.height = 0;
+  } else {
+    var wrapper = document.querySelector('.measuringWrapper4');
+    growDiv.style.height = wrapper.clientHeight + "px";
+  }
+}
+</script>
+
+
+
+</head>
+<body class="bg">
+  <center>
+  <div class="box">
+      <button type="button" onclick="growDiv1()" id="button" class="line">INFORMATION MANAGEMENT</button>
+      
+      
+      <div id='grow1'>
+        <div class='measuringWrapper1'>
+          <div class="text">Information management is an emerging field that is concerned with: The infrastructure used to collect, manage, preserve, store and deliver information.</div>
+
+            
+        </div>
+      </div>
+
+
+      <button type="button" onclick="growDiv2()" id="button" class="line">NETWORKING 1</button>
+
+      <div id='grow2'>
+        <div class='measuringWrapper2'>
+          <div class="text">Computer networking refers to interconnected computing devices that can exchange data and share resources with each other. These networked devices use a system of rules, called communications protocols, to transmit information over physical or wireless technologies.</div>
+
+            
+        </div>
+      </div>
+
+
+      <button type="button" onclick="growDiv3()" id="button" class="line">WEB SYSTEMS AND TECHNOLOGIES</button>
+
+      <div id='grow3'>
+        <div class='measuringWrapper3'>
+          <div class="text">Web information system, or web-based information system, is an information system that uses Internet web technologies to deliver information and services, to users or other information systems/applications.</div>
+        </div>
+      </div>
+
+
+      <button type="button" onclick="growDiv4()" id="button" class="line">SYSTEMS INTEGRATION AND ARCHITECTURE</button>
+
+      <div id='grow4'>
+        <div class='measuringWrapper4'>
+          <div class="text">The Systems Integration Architecture provides a bridge between the heterogeneous operational applications and platforms. This architecture ties together the mix of platforms, operating systems, transports, and applications.</div>
+
+            
+        </div>
+      </div>
+    </div>
+ 
+
+
+</body>
+</html>
